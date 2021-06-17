@@ -1,0 +1,181 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+body
+{
+    background: #262626;
+
+}
+.container
+{
+    width: 100%;
+    height: 50%;
+   /* background-color: #307D7E;*/
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Leckerli One', cursive;
+    color: white;
+    text-align:center;
+}
+@media(max-width:786px)
+{
+    .container
+    {
+   width: 100%;
+   height: auto;
+    }
+}
+.about h1
+{
+    color:#151B54;
+    padding: 4%;
+    text-align: center;
+    font-size: 3em;
+   
+}
+@media(max-width:787px)
+{
+    .about h1
+    {
+        padding: 3%;
+        text-align: center;
+        font-size: 1.5em;  
+    }
+}
+.about p 
+{
+    font-size: 1.5em;
+    padding: 3%;
+     color:white;
+}
+@media(max-width:787px)
+{
+    .about p 
+    {
+        font-size: 1em;
+        padding: 1.5%;
+    }  
+}
+.line
+{
+    text-decoration:none;
+}
+.button
+{
+    display:inline-block;
+    background-color:#222;
+    color:white;
+    text-decoration:none;
+    padding:1em 2em;
+    
+    border-radius:40%;
+    box-shadow: 0 8px 6px -6px #151B54;
+    margin:.5em 0
+}
+.button:hover
+{
+    background-color:black;
+}
+@media (max-width:786)
+{
+    .button
+    {
+        margin:6px;
+        border-radius:20%
+    }
+}
+/* section  Symptoms*/
+ #Symptoms
+  {
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 40px auto 0;
+    justify-content: center;
+    background-color: black;
+  }
+  @media(max-width:786px)
+  {
+    #Symptoms
+    {
+        width: auto;
+        margin: 40px auto 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+     
+    }
+  }
+  #Symptoms .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background:transparent;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  
+  #Symptoms .box .imgBox{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #Symptoms .box .imgBox img {
+    max-width: 100%;
+    height: 300px;
+    transition: transform 2s;
+  }
+  @media(max-width:786)
+  {
+    #Symptoms .box .imgBox img {
+      max-width: auto;
+      height: auto;
+     
+    }
+  }
+  
+  #Symptoms .box:hover .imgBox img {
+    transform: scale(1.2);
+  }
+  
+  #Symptoms .box .details{
+    position: absolute;
+    top:10px;
+    left:10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    transform: scaleY(0);
+    transition: transform .6s;
+  }
+  
+  #Symptoms .box:hover .details{
+    transform: scaleY(1);
+    border: 2px solid #262626;
+  }
+  
+  #Symptoms .box .details .content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding:15px;
+    color: #fff;
+  }
+  
+  #Symptoms .box .details .content h1 {
+    margin:0px;
+    padding:0px;
+    font-size: 20px;
+    align-content: center;
+    color: white;
+  }
